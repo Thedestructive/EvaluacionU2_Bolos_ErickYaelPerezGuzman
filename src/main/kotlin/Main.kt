@@ -1,19 +1,19 @@
 fun main(args: Array<String>) {
     //Prueba con lo que nos dio el profe
     val valores1 = listOf<Int>(1, 4, 4, 5, 6, 4, 5, 5, 10, 0, 1, 7, 3, 6, 4, 10, 2, 8, 6)
-    println(calcular(valores1))
+    println("Resultados de la primera lista " + calcular(valores1))
     //Prueba con puros Strikes
     val valores2 = listOf<Int>(10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10)
-    println(calcular(valores2))
+    println("Resultados de la segunda lista " + calcular(valores2))
     //Prueba con numeros fuera del valor aceptado
     val valores3 = listOf<Int>(11, 0, 5, 2, 1, 4, 2, 1, 20, 6, 5, 4, 2, 1, 4, 10, 1, 9, 7)
-    println(calcular(valores3))
+    println("Resultados de la tercera lista " + calcular(valores3))
     //Prueba con puros 1
     val valores4 = listOf<Int>(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-    println(calcular(valores4))
+    println("Resultados de la cuarta lista " + calcular(valores4))
     //Prueba con numeros aleatorios
     val valores5 = listOf<Int>(4, 3, 8, 1, 2, 7, 4, 5, 5, 5, 8, 2, 10, 9, 1, 7, 2, 10, 9, 1)
-    println(calcular(valores5))
+    println("Resultados de la quinta lista " + calcular(valores5))
 }
 
 fun calcular(valores: List<Int> = listOf<Int>()): Int {
@@ -54,7 +54,7 @@ fun calcular(valores: List<Int> = listOf<Int>()): Int {
         } else {
             //Si los valores sobrepasan el 10, hay un error, por eso mismo se sale del while.
             println("Favor de ingresar un número valido")
-            resultado=0
+            resultado = 0
             break
         }
         //suma el contador
