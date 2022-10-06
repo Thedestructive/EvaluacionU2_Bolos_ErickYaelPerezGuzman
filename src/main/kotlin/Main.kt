@@ -54,6 +54,7 @@ fun calcular(valores: List<Int> = listOf<Int>()): Int {
         } else {
             //Si los valores sobrepasan el 10, hay un error, por eso mismo se sale del while.
             println("Favor de ingresar un número valido")
+            resultado=0
             break
         }
         //suma el contador
